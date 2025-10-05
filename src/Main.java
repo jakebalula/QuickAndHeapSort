@@ -25,13 +25,13 @@ import java.util.Random;
           int[] arrCopy1 = arr.clone();
           int[] arrCopy2 = arr.clone();
 
-          //Insertion Sort time
+          //Heap Sort time
           long start = System.nanoTime();
           SortingAlgorithms.heapSort(arrCopy1);
           long end = System.nanoTime();
           long heapTime = (end - start) / 1000000; //converts into ms
 
-          //Merge Sort time
+          //Quick Sort time
           start = System.nanoTime();
           SortingAlgorithms.quickSort(arrCopy2, 0, arrCopy2.length - 1);
           end = System.nanoTime();
